@@ -1,0 +1,357 @@
+@font-face {
+    font-family: "Avenir Regular";
+    src: url(./fonts/Avenir_Regular.ttf);
+    font-weight: 400;
+   }
+   * {
+    font-family: "Avenir Regular";
+   }
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+.header_container {
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 50px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 121px;
+}
+
+a:hover {
+    color: #212353;
+    font-weight: 800;
+}
+li:not(:last-child) {
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4B5D68;
+    transition: all .5s;
+}
+
+.header__btn {
+    box-shadow: 0px 5px 5px 0px #4B5D681A;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 29px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em; 
+    color: #212353;   
+}
+
+.header__btn img {
+    margin-left: 20px;
+}
+/* ---------------блок1------------------ */
+.block_1_container{
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+.block_1_wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.img_girls {
+    width: 885px;
+    height: 468px;
+    position: relative;
+    padding-top: 226px;
+}
+.section_1_right{
+    z-index: 3;
+}
+.text1 {
+    position: absolute;
+    padding-top: 85px;
+    width: 645px;
+    height: 184px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: #212353;
+    
+}
+.text2 { 
+    padding-top: 300px;
+    width: 380px;
+    height: 120px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.Learn_more {
+    background-color: #9C69E2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 17px 29px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em; 
+    color: #FFFFFF; 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 170px;
+}
+/* ---------------блок2------------------ */
+.block_2_container {
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+    width: 1117px;
+    height: 560px;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    margin-top: 250px;
+}
+.block_2_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.girl2 {
+margin-right: 60px;
+width: 477px;
+height: 504px;
+background: url(image2.png);
+}
+
+.header2 h2 {
+width: 475px;
+height: 100px;
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 130%;
+color: #212353;
+}
+.header2 p{
+width: 474px;
+height: 170px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+
+color: #4B5D68;
+padding-top: 40px;
+}
+/* ---------------блок3------------------ */
+.block_3_container{
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+}
+.block_3_wrapper{
+
+}
+.header3{
+padding-top: 150px;
+}
+.header3 h2{
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 130%;
+text-align: center;
+color: #212353;
+}
+.header3 p{
+margin: 0 auto;
+width: 584px;
+height: 58px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+text-align: center;
+color: #4B5D68;
+padding-top: 50px;
+}
+.body_block3{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.features{
+display: flex;
+padding-top: 132px;
+}
+.images_block3{
+    padding-top: 50px;
+    width: 232px;
+    height: 211px;
+    background: url(image3.png);
+}
+.images_block3{
+    margin-right: 33px;
+}
+.text_block3 h2{
+    width: 200px;
+    height: 50px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #212353;
+}
+.text_block3 p{
+width: 220px;
+height: 160px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #4B5D68;
+}
+.arrow_right a{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+}
+a>img{
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/* ---------------блок4------------------ */
+.block_4_container {
+display: flex;
+justify-content: center;
+max-width: 1248px;
+width: 100%;
+margin: 0 auto;
+}
+.block_4_wrapper {
+    margin-top: 183px;
+    width: 1118px;
+height: 709px;
+background: #9C69E2;
+border-radius: 50px;
+
+}
+.Testimonials {
+padding: 109px 0px 0px 93px;
+width: 405px;
+height: 52px;
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 130%;
+color: #FFFFFF;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+.slider_left {
+margin:520px 0px 0px 93px;
+}
+.slider_right {
+    margin:520px 76px 0px 0px;
+    
+} 
+.window{
+display: flex;
+justify-content: center;
+    
+width: 949px;
+height: 330px;
+background: #FFFFFF;
+box-shadow: 0px 20px 0px rgba(67, 39, 109, 0.3);
+border-radius: 20px;
+margin-top: 100px;
+}
+.image_window {
+    padding: 60px 0px 180px 103px;
+}
+.text_window {
+margin-left: 44px;
+}
+.text_window h2{
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 160%;
+
+color: #212353;
+padding-top: 80px;
+}
+.text_window a{
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 160%;
+color: #9C69E2;
+
+}
+.text_window p{
+margin-top: 20px;
+width: 420px;
+height: 130px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+color: #4B5D68;
+}
