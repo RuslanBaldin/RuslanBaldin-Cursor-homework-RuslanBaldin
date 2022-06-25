@@ -1,7 +1,12 @@
 @font-face {
     font-family: "Avenir Regular";
-    src: url(./fonts/Avenir_Regular.ttf);
+    src: url(../fonts/Avenir_Regular.ttf);
     font-weight: 400;
+    }
+    @font-face{
+        font-family: "Montserrat" ;
+        src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+        /* src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf) */
     }
     .wrapper {
         min-height: 100%;
@@ -426,7 +431,6 @@ grid-template-columns: 50px 1fr ;
 grid-template-rows: repeat( 50px);
 align-items: center;
 }
-
 .contact_text {
 font-family: 'Montserrat';
 font-style: normal;
@@ -446,7 +450,6 @@ grid-column: 1/4;
     padding-bottom: 14px;
     padding-right: 20px;
 }
-
 .link_contact p {
 font-family: 'Montserrat';
 font-style: normal;
@@ -457,7 +460,6 @@ line-height: 22px;
 color: #111111;
 line-height:55px;
 }
-
 .contact_bloc2 {
 display: grid;
 grid-template-columns: 50px 1fr 1fr ;
@@ -536,8 +538,6 @@ margin-top: -50px;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 23px;
-    
-
 }
 .content_left_blue{
     grid-column: 1/2;
@@ -560,7 +560,6 @@ padding-top: 40px;
     padding-right: 45px;
     padding-top: 40px;
 }
-
 .box_white p{
     font-family: 'Open Sans';
     font-style: normal;
@@ -594,8 +593,6 @@ margin-top: 38px;
     text-align: right;
 
     color: #111111;
-    
-    
 }
 .data_blue_box{
 font-family: 'Montserrat';
@@ -715,7 +712,6 @@ line-height: 28px;
 font-feature-settings: 'liga' off;
 
 color: #2B7AF1;
-
 }
 .input_block_text_2 {
 font-family: 'Montserrat';
@@ -736,7 +732,6 @@ color: #111111;
     height: 560px;
     position: relative;
     margin-top: -115px;
-
 }
 .footer_content:after {
     content: '';
@@ -750,9 +745,6 @@ color: #111111;
     z-index: 2;
 }
 .footer_nav{
-
-
-    
 }
 .footer_nav_list{
     display: flex;
@@ -784,7 +776,7 @@ color: #FFFFFF;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-
+    padding-left:20px ;
     color: #FFFFFF;
 }
 .nav_text_2{
@@ -793,7 +785,7 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
+    margin-left: 10px;
     color: #FFFFFF;
 }
 .footer_icon{
@@ -801,6 +793,7 @@ color: #FFFFFF;
     width: 50px;
     height: 50px;
     margin-left: 30px;
+    margin-left: 10px;
 }
 
 .footer_footer {
