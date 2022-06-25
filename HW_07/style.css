@@ -628,7 +628,202 @@ display: block;
 
 padding-top:60px;
 }
+/* =========================================== */
+.content_input_block {
+    display: grid;
+    grid-template-columns:188px 400px 1fr ;
+    gap: 84px;
+    padding-top: 100px;
+    
+    justify-items: center;
+}
+.input_block_image {
+    position:absolute;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.input_block{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 1px 2px 5px gray ;
+    background-color: #FFFFFF;
+    z-index: 4;
+}
+.input_block_h2{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
 
-/*     .footer {
-        background-color: aqua;
-    } */
+color: #2B7AF1;
+}
+.input_name{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.texttarea_name{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    z-index: 4;
+}
+.btn_input_block{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+width: 152px;
+height: 50px;
+background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+box-shadow:  rgba(255, 122, 0, 0.2);
+border-radius: 25px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 14px;
+z-index: 4;
+}
+.input_block_text {
+}
+.input_block_text_1 {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+font-feature-settings: 'liga' off;
+
+color: #111111;
+padding-top: 50px;
+padding-bottom: 40px;
+}
+.input_block_span_name {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+font-feature-settings: 'liga' off;
+
+color: #2B7AF1;
+
+}
+.input_block_text_2 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+font-feature-settings: 'liga' off;
+
+color: #111111;
+}
+/* ============================================= */
+.footer {
+}
+.footer_content{
+    background: url(../image/07/footer.png);
+    width: auto;
+    height: 560px;
+    position: relative;
+    margin-top: -115px;
+
+}
+.footer_content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+}
+.footer_nav{
+
+
+    
+}
+.footer_nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    padding-top: 437px;
+    padding-right: 80px;
+}
+.btn_footer{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+    width: 150px;
+    height: 60px;
+
+    background: #2B7AF1;
+    border-radius: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.nav_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+.nav_text_2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+.footer_icon{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.footer_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    border-top: 2px solid wheat;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+.footer_footer_text1 {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;
+padding-top: 20px;
+}
+.footer_text2{
+    padding-right: 500px;
+}
