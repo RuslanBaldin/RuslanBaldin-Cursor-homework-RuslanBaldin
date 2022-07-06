@@ -1,10 +1,8 @@
 body{
-    
     background: url(../image/10/header1.jpg)center 0 no-repeat;
     height: 450px;
 }
 .menu_wrap {
-    background-color: gray;
     position: fixed;
     top:0;
     left: 0;
@@ -13,9 +11,9 @@ body{
     
 }
 .toggler {
-    position: absolute;
-    top:10px;
-    left: 600px;
+position: absolute;
+top:10px;
+left: 600px;
 cursor: pointer;
 width: 150px;
 height: 70px;
@@ -87,98 +85,114 @@ box-shadow: 1px 1px 1px 1px rgb(206, 223, 236)
     position: relative;
     overflow: hidden;
     margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pendulum_wrapper {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-left: -500px;
 }
-.pendulum {
-    position:absolute;
-    top: 10%;
-    transform: rotateZ(45deg);
-    font-size: 5px;
-    animation:pendulum  1.5s infinite ease ;
-}
-@keyframes pendulum{
-    0%{
-        transform: rotateZ(45deg);
-    }
-    100%{
-        transform: rotateZ(0deg);
-    }
-}
-.courd {
-    margin: 0 auto;
-    min-height: 300px;
-    width: 0.3em;
-}
-.shere {
+
+.shere_1 {
     width: 16em;
     height: 16em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 5px;
     background: rgb(22, 6, 95);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
+    transform-origin: top ;
+
+    
 }
+
 .shere_2{
-    margin-top: 320px;
+    
     width: 16em;
     height: 16em;
     font-size: 5px;
-    position: absolute;
+
     background: rgb(41, 29, 95);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
-    margin-left: 160px;
+    
 }
 .shere_3{
-    margin-top: 320px;
+    
     width: 16em;
     height: 16em;
     font-size: 5px;
-    position: absolute;
+    
     background: rgb(62, 53, 104);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
-    margin-left: 320px;
+    
 }
 .shere_4{
-    margin-top: 320px;
+    
     width: 16em;
     height: 16em;
     font-size: 5px;
-    position: absolute;
+ 
     background: rgb(104, 53, 53);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
-    margin-left: 480px;
+    
 }
 .shere_5{
-    margin-top: 320px;
+  
     width: 16em;
     height: 16em;
     font-size: 5px;
-    position: absolute;
+    
     background: rgb(156, 54, 54);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
-    margin-left: 640px;
+    
 }
 .shere_6{
-    margin-top: 320px;
+    
     width: 16em;
     height: 16em;
     font-size: 5px;
-    position: absolute;
+   
     background: rgb(134, 9, 9);
     border-radius: 50%;
     border: 1px solid rgb(193, 204, 32);
-    margin-left: 800px;
+    
+}
+.shere_7{
+    
+    width: 16em;
+    height: 16em;
+    font-size: 5px;
+   
+    background: rgb(240, 9, 9);
+    border-radius: 50%;
+    border: 1px solid rgb(193, 204, 32);
+    transform-origin: top ;
+
+}
+
+.pendulum_wrapper div:first-child{
+    animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
+    --direction:1;
+}
+@keyframes moving-up{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(45deg * var(--direction)));
+    }
+}
+.pendulum_wrapper div:last-child{
+    animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
+    --direction:-1;
 }
